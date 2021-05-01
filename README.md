@@ -22,7 +22,7 @@ https://isc.sans.edu/diary/Hunting+phishing+websites+with+favicon+hashes/27326
 
 # Hunting Phish Events for Paypal & Tesla:
 
-After reading about hunting of phishing websites using favicon hashes I though improvising the available script to generalise to accept Favicon URLs for quick analysis on the Shodan. 
+After reading about hunting of phishing websites using favicon hashes I thought to generalise it to accept Favicon URLs for quick analysis on the Shodan. 
 
 Looking for a favicon icon file on the orginal website of Paypal:
 
