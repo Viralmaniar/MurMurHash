@@ -16,7 +16,6 @@ pip install -r requirements.txt
 python MurMurHash.py
 </pre>
 
-
 # Detailed Blog:
 
 https://isc.sans.edu/diary/Hunting+phishing+websites+with+favicon+hashes/27326
@@ -47,6 +46,8 @@ Now, let's search for Tesla icon on the original site:
 ![image](https://user-images.githubusercontent.com/3501170/116247177-ef3f0e80-a7ad-11eb-9edb-7428569a2035.png)
 
 Searching on Shodan for Tesla phishing domains/IPs:
+![image](https://user-images.githubusercontent.com/3501170/116783829-50c7eb80-aad4-11eb-85f1-48fef9e89a0a.png)
+
  - https://www.shodan.io/search?query=http.favicon.hash%3A476528568
 
 ![image](https://user-images.githubusercontent.com/3501170/116245987-e39f1800-a7ac-11eb-948b-39b722861db6.png)
@@ -55,5 +56,8 @@ Validating Shodan results:
 
 ![image](https://user-images.githubusercontent.com/3501170/116247540-4e9d1e80-a7ae-11eb-9cfa-d4db76d1b3ec.png)
 
+# Questions?
 
+Twitter: [@ManiarViral](https://twitter.com/maniarviral) <BR>
+LinkedIn: https://au.linkedin.com/in/viralmaniar
 
