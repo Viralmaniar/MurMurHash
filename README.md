@@ -19,14 +19,13 @@ After reading about hunting of phishing websites using favicon hashes I though i
 
 Looking for a favicon icon file on the orginal website of Paypal:
 
-- https://www.shodan.io/search?query=http.favicon.hash%3A309020573 
-
 ![image](https://user-images.githubusercontent.com/3501170/116244994-d59cc780-a7ab-11eb-8185-68e5d06b092a.png)
 
 Using `MurMurHash.py` file generating hash of the icon:
 ![image](https://user-images.githubusercontent.com/3501170/116783246-13ae2a00-aad1-11eb-8ef9-6264369ef68f.png)
 
 Searching on Shodan for Paypal phishing domains/IPs:
+- https://www.shodan.io/search?query=http.favicon.hash%3A309020573 
 ![image](https://user-images.githubusercontent.com/3501170/116245172-04b33900-a7ac-11eb-9356-fac258a7b8ea.png)
 
 Validating Shodan results:
