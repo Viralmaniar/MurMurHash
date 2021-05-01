@@ -9,11 +9,11 @@ MurmurHash is a non-cryptographic hash function suitable for general hash-based 
 
 Further reading on: https://en.wikipedia.org/wiki/MurmurHash
 
-# Detailed Blog
+# Detailed Blog:
 
 https://isc.sans.edu/diary/Hunting+phishing+websites+with+favicon+hashes/27326
 
-# Hunting Phishing
+# Hunting Phish Events for Paypal & Tesla:
 
 After reading about hunting of phishing websites using favicon hashes I though improvising the available script to generalise to accept Favicon URLs for quick analysis on the Shodan. 
 
