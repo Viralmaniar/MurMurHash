@@ -9,11 +9,44 @@ MurmurHash is a non-cryptographic hash function suitable for general hash-based 
 
 Further reading on: https://en.wikipedia.org/wiki/MurmurHash
 
+# Detailed Blog
+
+https://isc.sans.edu/diary/Hunting+phishing+websites+with+favicon+hashes/27326
+
 # Hunting Phishing
 
-After reading about 
+After reading about hunting of phishing websites using favicon hashes I though improvising the available script to generalise to accept Favicon URLs for quick analysis on the Shodan. 
+
+Looking for a favicon icon file on the orginal website of Paypal:
+
+- https://www.shodan.io/search?query=http.favicon.hash%3A309020573 
+
+![image](https://user-images.githubusercontent.com/3501170/116244994-d59cc780-a7ab-11eb-8185-68e5d06b092a.png)
+
+Using `MurMurHash.py` file generating hash of the icon:
+![image](https://user-images.githubusercontent.com/3501170/116783246-13ae2a00-aad1-11eb-8ef9-6264369ef68f.png)
+
+Searching on Shodan for Paypal phishing domains/IPs:
+![image](https://user-images.githubusercontent.com/3501170/116245172-04b33900-a7ac-11eb-9356-fac258a7b8ea.png)
+
+Validating Shodan results:
+
+![image](https://user-images.githubusercontent.com/3501170/116245681-8c00ac80-a7ac-11eb-8e21-e9c942a94041.png)
+
+![image](https://user-images.githubusercontent.com/3501170/116245886-c702e000-a7ac-11eb-98d4-d12c76377d37.png)
+
+Now, let's search for Tesla icon on the original site:
+
+![image](https://user-images.githubusercontent.com/3501170/116247177-ef3f0e80-a7ad-11eb-9edb-7428569a2035.png)
+
+Searching on Shodan for Tesla phishing domains/IPs:
+ - https://www.shodan.io/search?query=http.favicon.hash%3A476528568
+
+![image](https://user-images.githubusercontent.com/3501170/116245987-e39f1800-a7ac-11eb-948b-39b722861db6.png)
+
+Validating Shodan results:
+
+![image](https://user-images.githubusercontent.com/3501170/116247540-4e9d1e80-a7ae-11eb-9cfa-d4db76d1b3ec.png)
 
 
-https://www.shodan.io/search?query=http.favicon.hash%3A309020573 <BR>
-https://www.shodan.io/search?query=http.favicon.hash%3A476528568
 
