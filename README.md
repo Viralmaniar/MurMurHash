@@ -15,7 +15,7 @@ Further reading on: https://en.wikipedia.org/wiki/MurmurHash
 <pre>
 git clone https://github.com/Viralmaniar/MurMurHash.git
 cd MurMurHash
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 python MurMurHash.py
 </pre>
 
@@ -32,7 +32,10 @@ Looking for a favicon icon file on the orginal website of Paypal:
 ![image](https://user-images.githubusercontent.com/3501170/116244994-d59cc780-a7ab-11eb-8185-68e5d06b092a.png)
 
 Using `MurMurHash.py` file generating hash of the icon:
-![image](https://user-images.githubusercontent.com/3501170/116783246-13ae2a00-aad1-11eb-8ef9-6264369ef68f.png)
+```bash
+❯ python3 MurMurHash.py https://www.paypalobjects.com/webstatic/icon/pp32.png
+Go to https://www.shodan.io/search?query=http.favicon.hash%3A48485760
+```
 
 Searching on Shodan for Paypal phishing domains/IPs:
 - https://www.shodan.io/search?query=http.favicon.hash%3A309020573 
