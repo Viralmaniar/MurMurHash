@@ -4,8 +4,8 @@ import codecs
 import sys
 
 if len(sys.argv) != 2:
-    print("USAGE: python3 MurMurFish.py FAVICON_URL")
-    exit(1)
+    print("USAGE: MurMurHash FAVICON_URL")
+    exit(0)
 
 requests.packages.urllib3.disable_warnings()
 
